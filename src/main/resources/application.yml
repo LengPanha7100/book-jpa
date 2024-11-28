@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: bookJPA
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: 12345
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/book_jpa_db
